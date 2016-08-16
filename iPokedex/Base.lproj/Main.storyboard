@@ -142,11 +142,49 @@
                     <connections>
                         <outlet property="collection" destination="iyR-eP-rd0" id="m09-uu-71L"/>
                         <outlet property="searchBar" destination="GAX-Rr-Jpy" id="Lij-cp-OPN"/>
+                        <segue destination="eUv-xs-wda" kind="show" identifier="PokemonDetailVC" id="xvp-Ay-m3O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="355"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="tXt-dm-jwd">
+            <objects>
+                <viewController id="eUv-xs-wda" customClass="PokemonDetailVC" customModule="iPokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J6C-vC-PzX"/>
+                        <viewControllerLayoutGuide type="bottom" id="YF2-qt-MiA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s8f-B4-Hwk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xit-OU-vJU">
+                                <rect key="frame" x="202" y="245" width="196" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="Ny2-nR-yFH"/>
+                                    <constraint firstAttribute="height" constant="109" id="h3m-cs-M9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xit-OU-vJU" firstAttribute="centerX" secondItem="s8f-B4-Hwk" secondAttribute="centerX" id="KXV-xx-Ilz"/>
+                            <constraint firstItem="xit-OU-vJU" firstAttribute="centerY" secondItem="s8f-B4-Hwk" secondAttribute="centerY" id="Vd3-ae-GnF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="xit-OU-vJU" id="0Ke-vK-wNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aae-SZ-7ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="355"/>
         </scene>
     </scenes>
     <resources>
