@@ -111,11 +111,6 @@ class Pokemon {
                     self._defense = "\(defense)"
                 }
                 
-                print(self._weight)
-                print(self._height)
-                print(self._attack)
-                print(self._defense)
-                
                 if let types = dict["types"] as? [Dictionary<String, String>] where types.count > 0 {
                     if let typeName = types[0]["name"] {
                         self._type = typeName.capitalizedString
@@ -132,8 +127,6 @@ class Pokemon {
                     self._type = ""
                 }
                 
-                print(self._type)
-                
                 if let descriptionArray = dict["descriptions"] as? [Dictionary<String, String>] where descriptionArray.count > 0 {
                     if let urlString = descriptionArray[0]["resource_uri"] {
                         let url = NSURL(string: "\(URL_BASE)\(urlString)")!
@@ -142,7 +135,6 @@ class Pokemon {
                             if let descDict = result.value as? Dictionary<String, AnyObject> {
                                 if let description = descDict["description"] as? String {
                                     self._description = description
-                                    print(self._description)
                                 }
                             }
                             completed()
@@ -164,10 +156,6 @@ class Pokemon {
                                 if let lvl = evolutions[0]["level"] as? Int {
                                     self._nextEvoLvl = "\(lvl)"
                                 }
-                                
-                                print(self._nextEvoId)
-                                print(self._nextEvoTxt)
-                                print(self._nextEvoLvl)
                             }
                         }
                     }
