@@ -60,7 +60,7 @@
                                     <constraint firstItem="vqc-kt-ldc" firstAttribute="centerX" secondItem="j87-TS-nMC" secondAttribute="centerX" id="tT2-oe-fz5"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="GAX-Rr-Jpy">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for Pokémon" translatesAutoresizingMaskIntoConstraints="NO" id="GAX-Rr-Jpy">
                                 <rect key="frame" x="0.0" y="63" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -141,6 +141,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="iyR-eP-rd0" id="m09-uu-71L"/>
+                        <outlet property="searchBar" destination="GAX-Rr-Jpy" id="Lij-cp-OPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
