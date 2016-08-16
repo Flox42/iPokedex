@@ -29,16 +29,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j87-TS-nMC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPokédex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqc-kt-ldc">
-                                        <rect key="frame" x="158" y="8" width="284" height="39"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="284" id="04K-74-fuk"/>
-                                            <constraint firstAttribute="height" constant="39" id="RzW-3d-yjV"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-EV-33E">
                                         <rect key="frame" x="561" y="16" width="31" height="31"/>
                                         <constraints>
@@ -50,6 +40,16 @@
                                             <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hh9-n0-iVD"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPokédex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqc-kt-ldc">
+                                        <rect key="frame" x="158" y="16" width="284" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="284" id="04K-74-fuk"/>
+                                            <constraint firstAttribute="height" constant="39" id="RzW-3d-yjV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -57,8 +57,14 @@
                                     <constraint firstAttribute="height" constant="55" id="K6A-N5-y9w"/>
                                     <constraint firstItem="vqc-kt-ldc" firstAttribute="centerY" secondItem="j87-TS-nMC" secondAttribute="centerY" id="Qfr-Mv-j1n"/>
                                     <constraint firstItem="Wgf-EV-33E" firstAttribute="top" secondItem="j87-TS-nMC" secondAttribute="top" constant="16" id="W41-Ky-gNx"/>
+                                    <constraint firstAttribute="bottom" secondItem="vqc-kt-ldc" secondAttribute="bottom" id="i5j-9n-f9g"/>
                                     <constraint firstItem="vqc-kt-ldc" firstAttribute="centerX" secondItem="j87-TS-nMC" secondAttribute="centerX" id="tT2-oe-fz5"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qfr-Mv-j1n"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for Pokémon" translatesAutoresizingMaskIntoConstraints="NO" id="GAX-Rr-Jpy">
                                 <rect key="frame" x="0.0" y="63" width="600" height="44"/>
@@ -164,8 +170,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-v0-VmI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFs-6X-lNc">
+                                        <rect key="frame" x="8" y="21" width="39" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="39" id="XOj-IX-vNK"/>
+                                            <constraint firstAttribute="height" constant="26" id="v41-VU-G4i"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="eUv-xs-wda" eventType="touchUpInside" id="e8k-aE-ohy"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xit-OU-vJU">
-                                        <rect key="frame" x="191" y="8" width="219" height="39"/>
+                                        <rect key="frame" x="191" y="16" width="219" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="196" id="Ny2-nR-yFH"/>
                                             <constraint firstAttribute="height" constant="39" id="fTr-Jd-CAw"/>
@@ -182,26 +199,21 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFs-6X-lNc">
-                                        <rect key="frame" x="8" y="15" width="39" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="39" id="XOj-IX-vNK"/>
-                                            <constraint firstAttribute="height" constant="26" id="v41-VU-G4i"/>
-                                        </constraints>
-                                        <state key="normal" image="back"/>
-                                        <connections>
-                                            <action selector="backBtnPressed:" destination="eUv-xs-wda" eventType="touchUpInside" id="e8k-aE-ohy"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="tFs-6X-lNc" secondAttribute="bottom" constant="14" id="DbB-XY-CLK"/>
+                                    <constraint firstAttribute="bottom" secondItem="xit-OU-vJU" secondAttribute="bottom" id="8kF-Js-apG"/>
+                                    <constraint firstAttribute="bottom" secondItem="tFs-6X-lNc" secondAttribute="bottom" constant="8" id="DbB-XY-CLK"/>
                                     <constraint firstItem="xit-OU-vJU" firstAttribute="centerY" secondItem="ooy-v0-VmI" secondAttribute="centerY" id="Gb7-au-V5n"/>
                                     <constraint firstAttribute="height" constant="55" id="shy-la-f7v"/>
                                     <constraint firstItem="xit-OU-vJU" firstAttribute="centerX" secondItem="ooy-v0-VmI" secondAttribute="centerX" id="t56-FA-swv"/>
                                     <constraint firstItem="tFs-6X-lNc" firstAttribute="leading" secondItem="ooy-v0-VmI" secondAttribute="leading" constant="8" id="xyL-mw-bUB"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gb7-au-V5n"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G01-hR-Fod">
                                 <rect key="frame" x="20" y="63" width="560" height="359"/>
