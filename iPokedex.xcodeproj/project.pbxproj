@@ -16,6 +16,8 @@
 		54396A201D621B0B0037F766 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54396A1F1D621B0B0037F766 /* Pokemon.swift */; };
 		54396A231D62FEC20037F766 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54396A221D62FEC20037F766 /* PokeCell.swift */; };
 		54396A251D630F9F0037F766 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54396A241D630F9F0037F766 /* csv.swift */; };
+		54396A2A1D6315F10037F766 /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54396A291D6315F10037F766 /* Pokemon.ttf */; };
+		54396A2C1D6319AA0037F766 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54396A2B1D6319AA0037F766 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		54396A1F1D621B0B0037F766 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		54396A221D62FEC20037F766 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		54396A241D630F9F0037F766 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		54396A291D6315F10037F766 /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
+		54396A2B1D6319AA0037F766 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		54396A281D630FE00037F766 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				54396A2B1D6319AA0037F766 /* music.mp3 */,
+				54396A291D6315F10037F766 /* Pokemon.ttf */,
 				54396A1C1D6204F50037F766 /* pokemon.csv */,
 			);
 			name = Resources;
@@ -176,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54396A151D6202420037F766 /* LaunchScreen.storyboard in Resources */,
+				54396A2A1D6315F10037F766 /* Pokemon.ttf in Resources */,
+				54396A2C1D6319AA0037F766 /* music.mp3 in Resources */,
 				54396A121D6202420037F766 /* Assets.xcassets in Resources */,
 				54396A1D1D6204F50037F766 /* pokemon.csv in Resources */,
 				54396A101D6202420037F766 /* Main.storyboard in Resources */,
